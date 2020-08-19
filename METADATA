@@ -9,11 +9,11 @@ third_party {
     type: GIT
     value: "https://github.com/matklad/once_cell"
   }
-  version: "1.4.0"
+  version: "1.4.1"
   license_type: NOTICE
   last_upgrade_date {
     year: 2020
-    month: 5
-    day: 18
+    month: 8
+    day: 17
   }
 }
