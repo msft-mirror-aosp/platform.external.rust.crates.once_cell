@@ -6,14 +6,14 @@ third_party {
     value: "https://crates.io/crates/once_cell"
   }
   url {
-    type: GIT
-    value: "https://github.com/matklad/once_cell"
+    type: ARCHIVE
+    value: "https://static.crates.io/crates/once_cell/once_cell-1.4.1.crate"
   }
-  version: "1.4.0"
+  version: "1.4.1"
   license_type: NOTICE
   last_upgrade_date {
     year: 2020
-    month: 5
-    day: 18
+    month: 8
+    day: 17
   }
 }
