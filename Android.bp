@@ -7,6 +7,7 @@ rust_library {
     srcs: ["src/lib.rs"],
     edition: "2018",
     features: [
+        "alloc",
         "default",
         "std",
     ],
