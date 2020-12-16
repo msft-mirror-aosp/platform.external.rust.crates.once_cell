@@ -1,12 +1,17 @@
---- Android.bp	2020-12-14 23:11:31.826922229 +0900
-+++ Android.bp.new	2020-12-14 23:10:57.251425048 +0900
-@@ -11,4 +11,9 @@ rust_library {
+diff --git a/Android.bp b/Android.bp
+index f122044..eb9a51f 100644
+--- a/Android.bp
++++ b/Android.bp
+ rust_library {
+     name: "libonce_cell",
+@@ -11,4 +11,10 @@ rust_library {
          "default",
          "std",
      ],
 +    apex_available: [
 +        "//apex_available:platform",
 +        "com.android.resolv",
++        "com.android.virt",
 +    ],
 +    min_sdk_version: "29",
  }
