@@ -5,6 +5,9 @@
       "name": "doh_unit_test"
     },
     {
+      "name": "keystore2_test"
+    },
+    {
       "name": "quiche_device_test_src_lib"
     },
     {
@@ -61,6 +64,9 @@
     },
     {
       "name": "thread_local_device_test_src_lib"
+    },
+    {
+      "name": "legacykeystore_test"
     }
   ]
 }
