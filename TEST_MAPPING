@@ -2,10 +2,34 @@
 {
   "presubmit": [
     {
+      "name": "ZipFuseTest"
+    },
+    {
+      "name": "apkdmverity.test"
+    },
+    {
+      "name": "authfs_device_test_src_lib"
+    },
+    {
       "name": "doh_unit_test"
     },
     {
       "name": "keystore2_test"
+    },
+    {
+      "name": "legacykeystore_test"
+    },
+    {
+      "name": "libapkverify.integration_test"
+    },
+    {
+      "name": "libapkverify.test"
+    },
+    {
+      "name": "libidsig.test"
+    },
+    {
+      "name": "microdroid_manager_test"
     },
     {
       "name": "quiche_device_test_src_lib"
@@ -66,7 +90,16 @@
       "name": "thread_local_device_test_src_lib"
     },
     {
-      "name": "legacykeystore_test"
+      "name": "virtualizationservice_device_test"
+    },
+    {
+      "name": "webpki_device_test_src_lib"
+    },
+    {
+      "name": "webpki_device_test_tests_dns_name_tests"
+    },
+    {
+      "name": "webpki_device_test_tests_integration"
     }
   ]
 }
