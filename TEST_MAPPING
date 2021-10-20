@@ -2,15 +2,6 @@
 {
   "presubmit": [
     {
-      "name": "ZipFuseTest"
-    },
-    {
-      "name": "apkdmverity.test"
-    },
-    {
-      "name": "authfs_device_test_src_lib"
-    },
-    {
       "name": "doh_unit_test"
     },
     {
@@ -29,7 +20,10 @@
       "name": "libidsig.test"
     },
     {
-      "name": "microdroid_manager_test"
+      "name": "once_cell_device_test_src_lib"
+    },
+    {
+      "name": "once_cell_device_test_tests_it"
     },
     {
       "name": "quiche_device_test_src_lib"
@@ -88,9 +82,6 @@
     },
     {
       "name": "thread_local_device_test_src_lib"
-    },
-    {
-      "name": "virtualizationservice_device_test"
     },
     {
       "name": "webpki_device_test_src_lib"
