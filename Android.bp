@@ -60,14 +60,18 @@ rust_library {
     min_sdk_version: "29",
 }
 
-rust_defaults {
-    name: "once_cell_test_defaults",
+rust_test {
+    name: "once_cell_test_src_lib",
+    host_supported: true,
     crate_name: "once_cell",
-    srcs: ["src/lib.rs"],
     cargo_env_compat: true,
     cargo_pkg_version: "1.8.0",
+    srcs: ["src/lib.rs"],
     test_suites: ["general-tests"],
     auto_gen_config: true,
+    test_options: {
+        unit_test: true,
+    },
     edition: "2018",
     features: [
         "alloc",
@@ -82,27 +86,18 @@ rust_defaults {
     ],
 }
 
-rust_test_host {
-    name: "once_cell_host_test_src_lib",
-    defaults: ["once_cell_test_defaults"],
+rust_test {
+    name: "once_cell_test_tests_it",
+    host_supported: true,
+    crate_name: "it",
+    cargo_env_compat: true,
+    cargo_pkg_version: "1.8.0",
+    srcs: ["tests/it.rs"],
+    test_suites: ["general-tests"],
+    auto_gen_config: true,
     test_options: {
         unit_test: true,
     },
-}
-
-rust_test {
-    name: "once_cell_device_test_src_lib",
-    defaults: ["once_cell_test_defaults"],
-}
-
-rust_defaults {
-    name: "once_cell_test_defaults_it",
-    crate_name: "it",
-    srcs: ["tests/it.rs"],
-    cargo_env_compat: true,
-    cargo_pkg_version: "1.8.0",
-    test_suites: ["general-tests"],
-    auto_gen_config: true,
     edition: "2018",
     features: [
         "alloc",
@@ -116,17 +111,4 @@ rust_defaults {
         "libonce_cell",
         "libregex",
     ],
-}
-
-rust_test_host {
-    name: "once_cell_host_test_tests_it",
-    defaults: ["once_cell_test_defaults_it"],
-    test_options: {
-        unit_test: true,
-    },
-}
-
-rust_test {
-    name: "once_cell_device_test_tests_it",
-    defaults: ["once_cell_test_defaults_it"],
 }
