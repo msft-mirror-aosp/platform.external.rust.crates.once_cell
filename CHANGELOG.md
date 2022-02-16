@@ -1,9 +1,5 @@
 # Changelog
 
-## 1.8.0
-
-- Add `try_insert` API -- a version of `set` that returns a reference.
-
 ## 1.7.2
 
 - Improve code size when using parking_lot feature.
