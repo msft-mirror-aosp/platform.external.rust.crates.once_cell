@@ -1,4 +1,4 @@
-//! Thread-safe, non-blocking, "first one wins" flavor of `OnceCell`.
+//! "First one wins" flavor of `OnceCell`.
 //!
 //! If two threads race to initialize a type from the `race` module, they
 //! don't block, execute initialization function together, but only one of
