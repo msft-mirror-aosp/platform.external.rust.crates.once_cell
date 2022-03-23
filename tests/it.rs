@@ -166,7 +166,6 @@ mod unsync {
 
     #[test]
     #[cfg(feature = "std")]
-    #[cfg(not(target_os = "android"))]
     fn lazy_poisoning() {
         let x: Lazy<String> = Lazy::new(|| panic!("kaboom"));
         for _ in 0..2 {
@@ -289,7 +288,6 @@ mod sync {
     }
 
     #[test]
-    #[cfg(not(target_os = "android"))]
     fn get_or_try_init() {
         let cell: OnceCell<String> = OnceCell::new();
         assert!(cell.get().is_none());
@@ -350,7 +348,6 @@ mod sync {
 
     #[test]
     #[cfg_attr(miri, ignore)] // miri doesn't support processes
-    #[ignore = "Android: ignore for now. Need to compile these binaries separately."]
     fn reentrant_init() {
         let examples_dir = {
             let mut exe = std::env::current_exe().unwrap();
@@ -489,7 +486,6 @@ mod sync {
     }
 
     #[test]
-    #[cfg(not(target_os = "android"))]
     fn lazy_poisoning() {
         let x: Lazy<String> = Lazy::new(|| panic!("kaboom"));
         for _ in 0..2 {
