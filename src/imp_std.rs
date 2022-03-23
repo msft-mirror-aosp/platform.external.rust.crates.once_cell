@@ -299,7 +299,6 @@ mod tests {
     }
 
     #[test]
-    #[cfg(not(target_os = "android"))]
     fn poison_bad() {
         static O: OnceCell<()> = OnceCell::new();
 
@@ -321,7 +320,6 @@ mod tests {
     }
 
     #[test]
-    #[cfg(not(target_os = "android"))]
     fn wait_for_force_to_finish() {
         static O: OnceCell<()> = OnceCell::new();
 
