@@ -16,9 +16,6 @@
   ],
   "presubmit": [
     {
-      "name": "ZipFuseTest"
-    },
-    {
       "name": "apkdmverity.test"
     },
     {
@@ -26,6 +23,9 @@
     },
     {
       "name": "doh_unit_test"
+    },
+    {
+      "name": "keystore2_legacy_blobs_test"
     },
     {
       "name": "keystore2_test"
@@ -57,9 +57,6 @@
   ],
   "presubmit-rust": [
     {
-      "name": "ZipFuseTest"
-    },
-    {
       "name": "apkdmverity.test"
     },
     {
@@ -67,6 +64,9 @@
     },
     {
       "name": "doh_unit_test"
+    },
+    {
+      "name": "keystore2_legacy_blobs_test"
     },
     {
       "name": "keystore2_test"
