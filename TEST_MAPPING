@@ -2,6 +2,9 @@
 {
   "imports": [
     {
+      "path": "external/rust/crates/android_logger"
+    },
+    {
       "path": "external/rust/crates/quiche"
     },
     {
@@ -16,6 +19,9 @@
   ],
   "presubmit": [
     {
+      "name": "ZipFuseTest"
+    },
+    {
       "name": "apkdmverity.test"
     },
     {
@@ -26,6 +32,12 @@
     },
     {
       "name": "keystore2_legacy_blobs_test"
+    },
+    {
+      "name": "keystore2_selinux_concurrency_test"
+    },
+    {
+      "name": "keystore2_selinux_test"
     },
     {
       "name": "keystore2_test"
@@ -41,6 +53,21 @@
     },
     {
       "name": "libidsig.test"
+    },
+    {
+      "name": "logger_device_unit_tests"
+    },
+    {
+      "name": "logger_test_config_log_level"
+    },
+    {
+      "name": "logger_test_default_init"
+    },
+    {
+      "name": "logger_test_env_log_level"
+    },
+    {
+      "name": "logger_test_multiple_init"
     },
     {
       "name": "microdroid_manager_test"
@@ -57,6 +84,9 @@
   ],
   "presubmit-rust": [
     {
+      "name": "ZipFuseTest"
+    },
+    {
       "name": "apkdmverity.test"
     },
     {
@@ -67,6 +97,12 @@
     },
     {
       "name": "keystore2_legacy_blobs_test"
+    },
+    {
+      "name": "keystore2_selinux_concurrency_test"
+    },
+    {
+      "name": "keystore2_selinux_test"
     },
     {
       "name": "keystore2_test"
@@ -82,6 +118,21 @@
     },
     {
       "name": "libidsig.test"
+    },
+    {
+      "name": "logger_device_unit_tests"
+    },
+    {
+      "name": "logger_test_config_log_level"
+    },
+    {
+      "name": "logger_test_default_init"
+    },
+    {
+      "name": "logger_test_env_log_level"
+    },
+    {
+      "name": "logger_test_multiple_init"
     },
     {
       "name": "microdroid_manager_test"
