@@ -5,6 +5,21 @@
       "path": "external/rust/crates/android_logger"
     },
     {
+      "path": "external/rust/crates/argh"
+    },
+    {
+      "path": "external/rust/crates/base64"
+    },
+    {
+      "path": "external/rust/crates/hashbrown"
+    },
+    {
+      "path": "external/rust/crates/hashlink"
+    },
+    {
+      "path": "external/rust/crates/libsqlite3-sys"
+    },
+    {
       "path": "external/rust/crates/quiche"
     },
     {
@@ -14,11 +29,26 @@
       "path": "external/rust/crates/thread_local"
     },
     {
+      "path": "external/rust/crates/tinytemplate"
+    },
+    {
+      "path": "external/rust/crates/tinyvec"
+    },
+    {
+      "path": "external/rust/crates/unicode-xid"
+    },
+    {
       "path": "external/rust/crates/webpki"
     }
   ],
   "presubmit": [
     {
+      "name": "VtsAidlDiceDemoteTargetTest"
+    },
+    {
+      "name": "VtsAidlDiceTargetTest"
+    },
+    {
       "name": "ZipFuseTest"
     },
     {
@@ -28,7 +58,34 @@
       "name": "authfs_device_test_src_lib"
     },
     {
+      "name": "avmdtool.test"
+    },
+    {
+      "name": "avmdtool_tests"
+    },
+    {
+      "name": "bluetooth_with_facades.test"
+    },
+    {
+      "name": "compos_verify.test"
+    },
+    {
+      "name": "composd_cmd.test"
+    },
+    {
+      "name": "diced_test"
+    },
+    {
       "name": "doh_unit_test"
+    },
+    {
+      "name": "encryptedstore.test"
+    },
+    {
+      "name": "fd_server.test"
+    },
+    {
+      "name": "keystore2_client_tests"
     },
     {
       "name": "keystore2_legacy_blobs_test"
@@ -43,6 +100,9 @@
       "name": "keystore2_test"
     },
     {
+      "name": "keystore2_vintf_test"
+    },
+    {
       "name": "legacykeystore_test"
     },
     {
@@ -52,7 +112,16 @@
       "name": "libapkverify.test"
     },
     {
-      "name": "libidsig.test"
+      "name": "libpvmfw_avb.integration_test"
+    },
+    {
+      "name": "libtombstoned_client_rust_test"
+    },
+    {
+      "name": "libuwb_adaptation_jni_tests"
+    },
+    {
+      "name": "libuwb_uci_jni_rust_tests"
     },
     {
       "name": "logger_device_unit_tests"
@@ -79,11 +148,29 @@
       "name": "once_cell_test_tests_it"
     },
     {
-      "name": "virtualizationservice_device_test"
+      "name": "open_then_run.test"
+    },
+    {
+      "name": "rialto_test"
+    },
+    {
+      "name": "virtualizationmanager_device_test"
+    },
+    {
+      "name": "vm.test"
+    },
+    {
+      "name": "vmbase_example.integration_test"
     }
   ],
   "presubmit-rust": [
     {
+      "name": "VtsAidlDiceDemoteTargetTest"
+    },
+    {
+      "name": "VtsAidlDiceTargetTest"
+    },
+    {
       "name": "ZipFuseTest"
     },
     {
@@ -93,7 +180,34 @@
       "name": "authfs_device_test_src_lib"
     },
     {
+      "name": "avmdtool.test"
+    },
+    {
+      "name": "avmdtool_tests"
+    },
+    {
+      "name": "bluetooth_with_facades.test"
+    },
+    {
+      "name": "compos_verify.test"
+    },
+    {
+      "name": "composd_cmd.test"
+    },
+    {
+      "name": "diced_test"
+    },
+    {
       "name": "doh_unit_test"
+    },
+    {
+      "name": "encryptedstore.test"
+    },
+    {
+      "name": "fd_server.test"
+    },
+    {
+      "name": "keystore2_client_tests"
     },
     {
       "name": "keystore2_legacy_blobs_test"
@@ -108,6 +222,9 @@
       "name": "keystore2_test"
     },
     {
+      "name": "keystore2_vintf_test"
+    },
+    {
       "name": "legacykeystore_test"
     },
     {
@@ -117,7 +234,16 @@
       "name": "libapkverify.test"
     },
     {
-      "name": "libidsig.test"
+      "name": "libpvmfw_avb.integration_test"
+    },
+    {
+      "name": "libtombstoned_client_rust_test"
+    },
+    {
+      "name": "libuwb_adaptation_jni_tests"
+    },
+    {
+      "name": "libuwb_uci_jni_rust_tests"
     },
     {
       "name": "logger_device_unit_tests"
@@ -144,7 +270,19 @@
       "name": "once_cell_test_tests_it"
     },
     {
-      "name": "virtualizationservice_device_test"
+      "name": "open_then_run.test"
+    },
+    {
+      "name": "rialto_test"
+    },
+    {
+      "name": "virtualizationmanager_device_test"
+    },
+    {
+      "name": "vm.test"
+    },
+    {
+      "name": "vmbase_example.integration_test"
     }
   ]
 }
