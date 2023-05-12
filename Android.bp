@@ -64,18 +64,25 @@ rust_library_rlib {
     name: "libonce_cell_nostd",
     crate_name: "once_cell",
     cargo_env_compat: true,
-    cargo_pkg_version: "1.16.0",
+    cargo_pkg_version: "1.17.1",
     srcs: ["src/lib.rs"],
     edition: "2021",
     features: [
         "alloc",
-        "default",
         "race",
     ],
     apex_available: [
         "//apex_available:platform",
-        "//apex_available:anyapex"
+        "//apex_available:anyapex",
     ],
+    prefer_rlib: true,
+    no_stdlibs: true,
+    stdlibs: [
+        "liballoc.rust_sysroot",
+        "libcompiler_builtins.rust_sysroot",
+        "libcore.rust_sysroot",
+    ],
+    product_available: true,
     vendor_available: true,
     min_sdk_version: "29",
 }
