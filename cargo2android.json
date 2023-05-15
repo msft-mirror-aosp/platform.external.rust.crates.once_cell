@@ -1,9 +1,22 @@
 {
   "dependencies": true,
+  "dependency-blocklist": [
+    "critical_section"
+  ],
   "device": true,
   "min-sdk-version": "29",
-  "patch": "patches/Android.bp.patch",
   "run": true,
-  "tests": true,
-  "vendor-available": true
+  "variants": [
+    {
+      "tests": true
+    },
+    {
+      "alloc": true,
+      "features": "alloc,race",
+      "force-rlib": true,
+      "no-host": true,
+      "suffix": "_nostd",
+      "no-std": true
+    }
+  ]
 }
